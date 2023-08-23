@@ -41,4 +41,4 @@ function subComRetorno(w,z,a){
     const subtracao = a-z-w;
     return subtracao;
 }
-console.log(subComRetorno(2000,1000,50))
+console.log(subComRetorno(2000,1000,90))
