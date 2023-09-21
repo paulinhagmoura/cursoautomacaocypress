@@ -21,6 +21,10 @@ describe('Validar imagem site Google', ()) => {
     
   })
   it.only('Pesquisar imagem do Bradesco no Google',() => {
-    cy.get()
+    cy.get('[class="gb_B"]').click();
+    cy.get('[id="APjFqb"]').click().type('Bradesco').type('{ENTER}');
+    cy.get('[height="163"]').click();
+    cy.get('[jsaction="VQAsE"]',{timeout: 6000}).should('be.visible');
+  })
+ 
   }
-}
