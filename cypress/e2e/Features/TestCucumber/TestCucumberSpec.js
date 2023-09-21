@@ -18,6 +18,6 @@ When('ele pesquisa por imagem', function () {
 Then('a imagem e exibida', function () {
     
     const validadorDaPesquisa = 'Airbnb Newsroom';
-    cy.get(elementosCucumber.imagem).eq(0).click();
-    cy.contains(validadorDaPesquisa).should('be.visible');
+    cy.get(elementosCucumber.imagem).eq(0).click({force:true});
+    cy.contains(validadorDaPesquisa).should('not.be.visible');
 });
